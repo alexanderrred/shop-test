@@ -95,7 +95,8 @@ body {
     position: absolute; 
 }
 
-.sub-menu > li > a{
+.sub-menu > li > a {
+    display: block;
     text-decoration: none;
     color: white;
     font-size: 21px;
@@ -103,6 +104,7 @@ body {
     padding-left: 20px;
     height: 40px;
     line-height: 40px;
+    
 }
 
 .sub-menu > li > a:hover {
@@ -111,6 +113,9 @@ body {
 
 .sub-menu > li:hover  {
     background-color: white;
+    
+    
+    
 }
 
 .form-search-header {
