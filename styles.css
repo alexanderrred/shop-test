@@ -27,8 +27,20 @@ body {
     margin-right: -15px;
 }
 
+.col-1 {
+
+}
+
+.col-2 {
+
+}
+
 .col-3 {
     width: 25%;
+}
+
+.col-4{
+    width: 33.3%;
 }
 
 .col-6 {
@@ -37,8 +49,20 @@ body {
     padding-right: 15px;
 }
 
+.col-7 {
+    
+}
+
+.col-8 {
+
+}
+
 .col-9 {
     width: 75%;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 [class*="col-"] {
@@ -109,6 +133,7 @@ body {
 
 .sub-menu > li > a:hover {
     color: #2c71b8;
+    
 }
 
 .sub-menu > li:hover  {
