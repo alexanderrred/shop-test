@@ -313,6 +313,11 @@ label::before {
     margin-top: 30px;
 }
 
+.submit-btn:hover {
+ background-color: #1f63a6;
+ cursor: pointer;
+}
+
 .arrow::after {
     content: "";
     background-image: url('image/arrow.png');
@@ -665,6 +670,7 @@ label::before {
 
 .btn-details:hover {
     background-color: #1f63a6;
+    cursor: pointer;
 }
 
 .btn-add {
@@ -680,6 +686,7 @@ label::before {
 
 .btn-add:hover {
     background-color: rgba(114, 159, 207, 0.732);
+    cursor: pointer;
 }
 
 .btn-add::after {
