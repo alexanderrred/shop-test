@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(image/patt.png);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.row::after, .menu::after, .sub-menu::after, .nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-1 {
+    width: 8,33333%;
+}
+
+.col-2 {
+    width: 16,66667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33%;
+}
+
+.col-6 {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-7 {
+    width: 58,33333%;
+}
+
+.col-8 {
+    width: 67%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header, .footer {
+    background-color: rgba(225, 225, 225, 0.75);
+    padding: 25px 0;
+}
+
+.logo {
+    margin-top: 7px;
+}
+
+.menu > li{
+    float: left;
+    width: 25%;
+    border-left: 1px solid #2c71b8;
+    position: relative;
+}
+
+.menu:last-child {
+    border-right: 1px solid #2c71b8;
+}
+
+.menu > li > a{
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    color: #2c71b8;
+    font-size: 21px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.menu >li > a:hover {
+    background-color: #2c71b8;
+    color: white;
+}
+
+
+.menu > li:hover .sub-menu {
+    display: block;
+    width: 286px;
+    background-color: #2c71b8;
+    left: -1px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute; 
+}
+
+.sub-menu > li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    padding-left: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.sub-menu > li > a:hover {
+    color: #2c71b8;
+}
+
+.sub-menu > li:hover  {
+    background-color: white;
+}
+
+
+.form-search-header {
+    border: 1px solid #2c71b8;
+    padding-left: 19px;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+}
+
+.form-search-header input {
+    background-color: transparent;
+    border: none;
+    font: 1em sans-serif;
+
+}
+
+.form-search-header input:focus {
+    outline: none;
+}
+
+.form-search-header button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #2c71b8;
+    border: none;
+    top: 4px;
+    right: 4px;
+    background-image: url("image/icon\ \(4\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-search-header button:hover {
+    cursor: pointer;
+    background-color: #1f63a6;
+
+}
+
+::placeholder {
+    color: #2c71b8;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.cart-header {
+    width: 40px;
+    height: 40px;
+    background-image: url("image/icon\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    position: relative;
+    padding: 10px 12px 10px 10px;
+    margin-top: 5px;
+}
+
+.cart-header:hover {
+    background-color: rgba(255, 255, 255, 0.614);
+    cursor: pointer;
+}
+
+.product-count {
+    width: 20px;
+    height: 20px;
+    background-color: #2c71b8;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    
+}
+
+.slider {
+    height: 400px;
+    background-color: rgba(35, 90, 147, 0.75);
+    border-bottom: 1px solid white;
+}
+
+
+.background:hover > a {
+    background-color: #2c71b8;
+    color: white;
+}
+
+.arrow {
+    position: relative;
+}
+
+.sidebar {
+    background-color: rgba(86, 141, 198, 0.7);
+    margin-top: 0;
+    border-right: 1px solid white;
+    padding: 33px 30px;
+}
+
+.device-type {
+    margin-bottom: 50px;
+}
+
+
+.form-title {
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 26px;
+}
+
+label::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;}
+
+.device-type input:checked + label::before {
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.device-type input {
+    display: none;
+}
+
+.list {
+    display: block;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.list span {
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    font-size: 21px;
+}
+
+.more-options {
+    display: block;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-top: -30px;
+    width: 100%;
+}
+
+.more-options:hover {
+    color: #dce5ee;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #2c71b8;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    width: 210px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.arrow::after {
+    content: "";
+    background-image: url('image/arrow.png');
+    display: block;
+    position: absolute;
+    left: 117px;
+    top: 19px;
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+
+}
+
+.arrow:hover::after {
+    content: "";
+    background-image: url('image/arrow.white.png');
+    display: block;
+    position: absolute;
+    left: 117px;
+    top: 19px;
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+
+}
+
+.nav > li{
+    float: left;
+}
+
+.nav > li > a{
+    display: block;
+    text-decoration: none;
+    color: #96b8dc;
+    font-size: 14px;
+    padding-right: 20px;
+    margin-top: 32px;
+    margin-bottom: 27px;
+    position: relative;
+}
+
+.nav > li > a:hover {
+    color: white;
+}
+
+
+.arrow-concole-1, .arrow-concole-2 {
+    position: relative;
+}
+
+.arrow-concole-1::after {
+    content: "";
+    background-image: url('image/arrow-2.png');
+    display: block;
+    position: absolute;
+    left: 77px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    background-size: 12px 12px;
+}
+
+.arrow-concole-2::after {
+    content: "";
+    background-image: url('image/arrow-2.png');
+    display: block;
+    position: absolute;
+    left: 60px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    background-size: 12px 12px;
+}
+
+.name-menu-prodacts {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.menu-sort > li {
+    position: relative;
+}
+
+.menu-sort > li > a:hover {
+    background-color: white;
+    color: #2c71b8;
+}
+
+.menu-sort > li > a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 300;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid white;
+    width: 263px;
+    padding-left: 20px;
+    background-color: #2c71b8;
+}
+
+.menu-sort > li:hover .sub-menu-sort {
+    display: block;
+    width: 263px;
+    background-color: #2c71b8;
+    z-index: 10;
+
+}
+
+.sub-menu-sort {
+    display: none;
+    position: absolute; 
+}
+
+.sub-menu-sort > li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid white;
+}
+
+.sub-menu-sort > li > a {
+ border-top: none;
+}
+
+.sub-menu-sort > li > a:hover {
+    background-color: white;
+    color: #2c71b8;
+}
+
+.arrow-white {
+    position: relative;
+}
+
+.arrow-white::after {
+    content: "";
+    background-image: url('image/arrow.white.png');
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px;
+
+}
+
+.arrow-white:hover::after {
+    content: "";
+    background-image: url('image/arrow.png');
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px;
+}
+
+.product {
+    height: 683px;
+}
+
+.product-image{
+    background-color: rgba(202, 219, 237, 72%);  
+    background-repeat: no-repeat;
+    height: 180px;
+    background-position: center;
+    display: block;
+    margin-top: 50px;
+    position: relative;
+}
+
+.product-1 {
+    background-image: url("image/icon\ \(17\).png");
+    background-position: center;
+}
+
+.product-2 {
+    background-image: url("image/icon\ \(9\).png");
+    background-position: center;
+}
+
+.product-3 {
+    background-image: url("image/icon\ \(10\).png");
+    background-position: center;
+}
+
+.product-4 {
+    background-image: url("image/icon\ \(16\).png");
+    background-position: center;
+}
+
+.product-5 {
+    background-image: url("image/icon\ \(14\).png");
+    background-position: center;
+}
+
+.product-6 {
+    background-image: url("image/icon\ \(12\).png");
+    background-position: center;
+}
+
+.product-7 {
+    background-image: url("image/icon\ \(15\).png");
+    background-position: center;
+}
+
+
+.zoom {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: url("image/icon8.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: #2c71b8 1px solid;
+    background-position: center;
+    background-size: 20px 20px;
+
+}
+
+.zoom:hover {
+    background-color: #2c71b8;
+    cursor: pointer;
+    background-image: url("image/icon\ \(6\).png");
+}
+
+.like {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    border: #2c71b8 1px solid;
+    width: 30px;
+    height: 30px;
+    background-image: url("image/like-blue.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+.like:hover {
+    background-color: #2c71b8;
+    cursor: pointer;
+    background-image: url("image/icon\ \(7\).png");
+    
+}
+
+.like-blue {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    border: #2c71b8 1px solid;
+    width: 30px;
+    height: 30px;
+    background-color: #2c71b8;
+    background-image: url("image/icon\ \(7\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+.like-blue:hover {
+    background-color: rgba(202, 219, 237, 72%);
+    background-image: url("image/like-blue.png");
+    cursor: pointer;
+}
+
+.product-title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.product-description {
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.product-features span {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-right: 8px;
+}
+
+.product-features {
+    margin-top: 20px;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+
+}
+
+.product-price {
+    color: white;
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-left: 61px;
+}
+
+.product-price-2 {
+    color: white;
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-left: 49px;
+}
+
+.cent {
+    position: absolute;
+    top: 5px;
+    left: 115px;
+    font-size: 38px;
+}
+
+.cent-2 {
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    font-size: 38px;
+}
+
+.btn-details {
+    background-color: #2c71b8;
+    color: white;
+    border: solid 1px white;
+    height: 50px;
+    width: 210px;
+    margin-top: 25px;
+    margin-left: 29px;
+}
+
+.btn-details:hover {
+    background-color: #1f63a6;
+}
+
+.btn-add {
+    position: relative;
+    color: white;
+    height: 50px;
+    width: 210px;
+    margin-left: 29px;
+    margin-top: 15px;
+    border: none;
+    background-color: rgba(86, 141, 198, 0.6);
+}
+
+.btn-add:hover {
+    background-color: rgba(114, 159, 207, 0.732);
+}
+
+.btn-add::after {
+    content: "";
+    display: block;
+    background-image: url('image/icon-2.png');
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    background-size: 17px 17px;
+    top: 16px;
+    left: 168px;
+}
+
+.about-product {
+    border: solid 1px white;
+    padding-bottom: 30px;
+}
+
+.load-more {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.footer-text {
+    display: block;
+    color: #2c71b8;
+    text-align: center;
+}
